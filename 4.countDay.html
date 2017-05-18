@@ -1,0 +1,37 @@
+<!DOCTYPE = html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery.js"></script>
+
+
+<script>
+    function myFunction() {
+        var minutes = 60*1000;
+        var hours = 60*minutes;
+        var days = 24*hours;
+        var years = 365*days;
+        var inputDay = $("#day").val();
+        var today = new Date(inputDay);
+        var year = today.getFullYear();
+        var firstDay = new Date(year,0,1);
+        var inputDayValue = Date.parse(inputDay);
+        var firstDayValue = Date.parse(firstDay);
+        var countDay = Math.round((inputDayValue - firstDayValue) / days)+1;
+        
+        document.getElementById("demo").innerHTML = countDay;
+    }
+
+</script>
+
+
+</head>
+
+<body>
+    <input id="day" type="date" value="">
+    <button onclick="myFunction()">計算輸入日期為當年第幾天</button>
+    <p id="demo"></p>
+
+
+</body>    
+</html>
