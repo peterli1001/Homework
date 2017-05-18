@@ -1,0 +1,23 @@
+<!DOCTYPE = html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+
+<script>
+    var a=0, b=0, c=0, result="";
+    for (i=100; i<1000; i++){
+        a = parseInt(i/100);
+        b = parseInt((i-a*100)/10);
+        c = (i-a*100)-b*10;
+        result = Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3)
+    if (i == result) {
+        document.write(i+"<br>");
+    }
+    }
+</script>     
+</head>
+
+<body>
+</body>  
+
+</html>
