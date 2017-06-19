@@ -1,5 +1,4 @@
 # Homework
-Lab_LoginSession use c#
-
-1~4 use JavaScript 
+c#--Lab_LoginSession
+JavaScript-- 1~4
 
